@@ -28,11 +28,11 @@ export default {
       search: '',
       headers: [
 
-        { text: 'UserId', value: 'created_by', class: "blue lighten-1 rounded-l-lg white--text text-subtitle-1 font-weight-bold ", align: "left" },
-        { text: 'Login (Date)', value: 'login_date', class: "blue lighten-1 white--text text-subtitle-1 font-weight-bold" },
-        { text: 'Login (time)', value: 'login_time', class: "blue lighten-1 white--text text-subtitle-1 font-weight-bold" },
-        { text: 'Log_out (Date)', value: 'logout_date', class: "blue lighten-1 white--text text-subtitle-1 font-weight-bold" },
-        { text: 'Log_out (time)', value: 'logout_time', class: "blue lighten-1 rounded-r-lg white--text text-subtitle-1 font-weight-bold" },
+        { text: 'UserId', value: 'createdBy', class: "blue lighten-1 rounded-l-lg white--text text-subtitle-1 font-weight-bold ", align: "left" },
+        { text: 'Login (Date)', value: 'loginDate', class: "blue lighten-1 white--text text-subtitle-1 font-weight-bold" },
+        { text: 'Login (time)', value: 'loginTime', class: "blue lighten-1 white--text text-subtitle-1 font-weight-bold" },
+        { text: 'Log_out (Date)', value: 'logoutDate', class: "blue lighten-1 white--text text-subtitle-1 font-weight-bold" },
+        { text: 'Log_out (time)', value: 'logoutTime', class: "blue lighten-1 rounded-r-lg white--text text-subtitle-1 font-weight-bold" },
       ],
 
       desserts: [],

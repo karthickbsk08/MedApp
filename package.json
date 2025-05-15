@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "kill-port": "kill -9 $(lsof -t -i:8080) 2>/dev/null || true",
+    "serve": "npm run kill-port && vue-cli-service serve"
   },
   "dependencies": {
     "apexcharts": "^3.41.1",

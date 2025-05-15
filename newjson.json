@@ -1,0 +1,900 @@
+{
+  "mandateHistoryList": [
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for SIPK23",
+        "logTime": "2025-03-07 12:30:19",
+        "logAction": "ACR",
+        "fieldName": "SIPK23"
+      },
+      {
+        "logMsg": "SIPK23 autopay is scheduled on 2025-03-09",
+        "logTime": "2025-03-07 12:30:19",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "SIPK23 autopay amount set for ₹5",
+        "logTime": "2025-03-07 12:30:19",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "SIPK23 autopay frequency is Daily",
+        "logTime": "2025-03-07 12:30:19",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "Transaction initiated for ₹8.00",
+        "logTime": "2025-03-07 22:29:59",
+        "logAction": "TRP",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 8.00 payment failed for SIPK23 - Transaction not allowed, Debit is already created for this UMRN",
+        "logTime": "2025-03-07 22:29:59",
+        "logAction": "TRF",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 8.00 payment failed for SIPK23 - Transaction not allowed, Debit is already created for this UMRN",
+        "logTime": "2025-03-09 22:29:58",
+        "logAction": "TRF",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 8.00 payment success for SIPK23. ",
+        "logTime": "2025-03-09 22:29:58",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is paused",
+        "logTime": "2025-03-10 13:36:27",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is resumed",
+        "logTime": "2025-03-10 13:36:28",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 autopay date changed from 2025-03-09 to 2025-03-12",
+        "logTime": "2025-03-10 13:36:39",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is paused",
+        "logTime": "2025-03-10 13:36:43",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is resumed",
+        "logTime": "2025-03-10 13:36:44",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is paused",
+        "logTime": "2025-03-10 13:36:54",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is resumed",
+        "logTime": "2025-03-10 13:38:07",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is paused",
+        "logTime": "2025-03-10 13:38:08",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is resumed",
+        "logTime": "2025-03-11 11:25:37",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is paused",
+        "logTime": "2025-03-11 11:26:17",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "SIPK23 Autopay is canceled",
+        "logTime": "2025-03-11 11:26:20",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for SIPK1",
+        "logTime": "2025-03-10 13:30:27",
+        "logAction": "ACR",
+        "fieldName": "SIPK1"
+      },
+      {
+        "logMsg": "SIPK1 autopay is scheduled on 2025-03-12",
+        "logTime": "2025-03-10 13:30:27",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "SIPK1 autopay amount set for ₹1",
+        "logTime": "2025-03-10 13:30:27",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "SIPK1 autopay frequency is Daily",
+        "logTime": "2025-03-10 13:30:27",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "SIPK1 Autopay is canceled",
+        "logTime": "2025-03-10 13:30:36",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for SIPT3",
+        "logTime": "2025-03-10 13:39:00",
+        "logAction": "ACR",
+        "fieldName": "SIPT3"
+      },
+      {
+        "logMsg": "SIPT3 autopay is scheduled on 2025-03-13",
+        "logTime": "2025-03-10 13:39:00",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "SIPT3 autopay amount set for ₹1",
+        "logTime": "2025-03-10 13:39:00",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "SIPT3 autopay frequency is Daily",
+        "logTime": "2025-03-10 13:39:00",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "SIPT3 autopay date changed from 2025-03-13 to 2025-03-14",
+        "logTime": "2025-03-10 13:41:11",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "SIPT3 Autopay is canceled",
+        "logTime": "2025-03-10 13:58:16",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for KannanMass",
+        "logTime": "2025-03-11 11:26:56",
+        "logAction": "ACR",
+        "fieldName": "KannanMass"
+      },
+      {
+        "logMsg": "KannanMass autopay is scheduled on 2025-03-13",
+        "logTime": "2025-03-11 11:26:56",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "KannanMass autopay amount set for ₹1",
+        "logTime": "2025-03-11 11:26:56",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "KannanMass autopay frequency is Daily",
+        "logTime": "2025-03-11 11:26:56",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-11 22:29:56",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-12 22:29:56",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-13 22:29:55",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-14 22:29:54",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-15 22:30:00",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-16 22:29:59",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for KannanMass. ",
+        "logTime": "2025-03-17 22:29:59",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "KannanMass Autopay is canceled",
+        "logTime": "2025-03-18 13:18:35",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for Kandeepancert",
+        "logTime": "2025-03-12 15:43:10",
+        "logAction": "ACR",
+        "fieldName": "Kandeepancert"
+      },
+      {
+        "logMsg": "Kandeepancert autopay is scheduled on 2025-03-15",
+        "logTime": "2025-03-12 15:43:10",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "Kandeepancert autopay amount set for ₹1",
+        "logTime": "2025-03-12 15:43:10",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "Kandeepancert autopay frequency is Daily",
+        "logTime": "2025-03-12 15:43:10",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "Kandeepancert autopay date changed from 2025-03-15 to 2025-03-16",
+        "logTime": "2025-03-12 15:58:51",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "Kandeepancert Autopay is canceled",
+        "logTime": "2025-03-12 16:00:12",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for VaaVaathiyarNee",
+        "logTime": "2025-03-18 13:21:31",
+        "logAction": "ACR",
+        "fieldName": "VaaVaathiyarNee"
+      },
+      {
+        "logMsg": "VaaVaathiyarNee autopay is scheduled on 2025-03-20",
+        "logTime": "2025-03-18 13:21:31",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "VaaVaathiyarNee autopay amount set for ₹1",
+        "logTime": "2025-03-18 13:21:31",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "VaaVaathiyarNee autopay frequency is Daily",
+        "logTime": "2025-03-18 13:21:31",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for VaaVaathiyarNee. ",
+        "logTime": "2025-03-18 22:29:58",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.00 payment success for VaaVaathiyarNee. ",
+        "logTime": "2025-03-19 22:30:01",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "₹ 4.54 payment success for VaaVaathiyarNee. ",
+        "logTime": "2025-03-20 22:30:00",
+        "logAction": "TRS",
+        "fieldName": "AU-TR"
+      },
+      {
+        "logMsg": "VaaVaathiyarNee Autopay is canceled",
+        "logTime": "2025-03-21 20:44:42",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for NeeSolluuEvlovv",
+        "logTime": "2025-03-18 13:51:18",
+        "logAction": "ACR",
+        "fieldName": "NeeSolluuEvlovv"
+      },
+      {
+        "logMsg": "NeeSolluuEvlovv autopay is scheduled on 2025-03-20",
+        "logTime": "2025-03-18 13:51:18",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "NeeSolluuEvlovv autopay amount set for ₹5",
+        "logTime": "2025-03-18 13:51:18",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "NeeSolluuEvlovv autopay frequency is Fortnightly",
+        "logTime": "2025-03-18 13:51:18",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "NeeSolluuEvlovv Autopay is canceled",
+        "logTime": "2025-03-18 13:51:36",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for Test1",
+        "logTime": "2025-03-18 13:52:15",
+        "logAction": "ACR",
+        "fieldName": "Test1"
+      },
+      {
+        "logMsg": "Test1 autopay is scheduled on 2025-03-27",
+        "logTime": "2025-03-18 13:52:15",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "Test1 autopay amount set for ₹10",
+        "logTime": "2025-03-18 13:52:15",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "Test1 autopay frequency is Fortnightly",
+        "logTime": "2025-03-18 13:52:15",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "Test1 autopay amount changed from ₹10 to ₹100",
+        "logTime": "2025-03-18 13:58:34",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "Test1 Autopay is paused",
+        "logTime": "2025-03-18 14:00:35",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "Test1 Autopay is resumed",
+        "logTime": "2025-03-18 14:24:28",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "Test1 Autopay is paused",
+        "logTime": "2025-03-18 14:24:31",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "Test1 Autopay is canceled",
+        "logTime": "2025-03-21 20:44:39",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for newtest",
+        "logTime": "2025-03-21 20:48:20",
+        "logAction": "ACR",
+        "fieldName": "newtest"
+      },
+      {
+        "logMsg": "newtest autopay is scheduled on 2025-03-24",
+        "logTime": "2025-03-21 20:48:20",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "newtest autopay amount set for ₹100",
+        "logTime": "2025-03-21 20:48:20",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "newtest autopay frequency is Weekly",
+        "logTime": "2025-03-21 20:48:20",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "newtest Autopay is paused",
+        "logTime": "2025-03-21 20:48:28",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "newtest autopay amount changed from ₹100 to ₹150",
+        "logTime": "2025-03-21 20:59:07",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "newtest Autopay is canceled",
+        "logTime": "2025-03-22 10:41:28",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for testing",
+        "logTime": "2025-03-22 12:47:58",
+        "logAction": "ACR",
+        "fieldName": "testing"
+      },
+      {
+        "logMsg": "testing autopay is scheduled on 2025-03-25",
+        "logTime": "2025-03-22 12:47:58",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "testing autopay amount set for ₹100",
+        "logTime": "2025-03-22 12:47:58",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "testing autopay frequency is Daily",
+        "logTime": "2025-03-22 12:47:58",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "testing autopay date changed from 2025-03-25 to 2025-03-24",
+        "logTime": "2025-03-22 12:48:19",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "testing Autopay is paused",
+        "logTime": "2025-03-22 12:49:21",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "testing Autopay is canceled",
+        "logTime": "2025-03-22 12:49:24",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for test1",
+        "logTime": "2025-03-22 12:49:46",
+        "logAction": "ACR",
+        "fieldName": "test1"
+      },
+      {
+        "logMsg": "test1 autopay is scheduled on 2025-03-26",
+        "logTime": "2025-03-22 12:49:46",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "test1 autopay amount set for ₹100",
+        "logTime": "2025-03-22 12:49:46",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "test1 autopay frequency is Daily",
+        "logTime": "2025-03-22 12:49:46",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "test1 autopay amount changed from ₹100 to ₹5",
+        "logTime": "2025-03-22 12:50:00",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "test1 autopay amount changed from ₹5 to ₹101",
+        "logTime": "2025-03-22 12:50:28",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "test1 autopay amount changed from ₹101 to ₹5",
+        "logTime": "2025-03-22 12:50:35",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "test1 autopay amount changed from ₹5 to ₹100",
+        "logTime": "2025-03-22 12:51:00",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "test1 autopay amount changed from ₹100 to ₹65",
+        "logTime": "2025-03-22 12:51:06",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "test1 Autopay is paused",
+        "logTime": "2025-03-22 12:51:12",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "test1 Autopay is canceled",
+        "logTime": "2025-03-22 12:52:05",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for s1",
+        "logTime": "2025-03-24 17:02:22",
+        "logAction": "ACR",
+        "fieldName": "s1"
+      },
+      {
+        "logMsg": "s1 autopay is scheduled on 2025-03-27",
+        "logTime": "2025-03-24 17:02:22",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "s1 autopay amount set for ₹100",
+        "logTime": "2025-03-24 17:02:22",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "s1 autopay frequency is Daily",
+        "logTime": "2025-03-24 17:02:22",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "s1 Autopay is canceled",
+        "logTime": "2025-03-24 17:02:52",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for NewSiptest",
+        "logTime": "2025-03-26 16:19:02",
+        "logAction": "ACR",
+        "fieldName": "NewSiptest"
+      },
+      {
+        "logMsg": "NewSiptest autopay is scheduled on 2025-03-29",
+        "logTime": "2025-03-26 16:19:02",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "NewSiptest autopay amount set for ₹100",
+        "logTime": "2025-03-26 16:19:02",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "NewSiptest autopay frequency is Daily",
+        "logTime": "2025-03-26 16:19:02",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "NewSiptest autopay amount changed from ₹100 to ₹10",
+        "logTime": "2025-03-26 16:19:18",
+        "logAction": "ADC",
+        "fieldName": "AU-AM-UP"
+      },
+      {
+        "logMsg": "NewSiptest autopay date changed from 2025-03-29 to 2025-03-28",
+        "logTime": "2025-03-26 16:19:18",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "NewSiptest Autopay is paused",
+        "logTime": "2025-03-26 16:19:27",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "NewSiptest Autopay is resumed",
+        "logTime": "2025-03-26 16:19:29",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "NewSiptest Autopay is canceled",
+        "logTime": "2025-03-26 17:25:39",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for mysip",
+        "logTime": "2025-03-26 17:55:17",
+        "logAction": "ACR",
+        "fieldName": "mysip"
+      },
+      {
+        "logMsg": "mysip autopay is scheduled on 2025-03-29",
+        "logTime": "2025-03-26 17:55:17",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "mysip autopay amount set for ₹100",
+        "logTime": "2025-03-26 17:55:17",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "mysip autopay frequency is Daily",
+        "logTime": "2025-03-26 17:55:17",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "mysip Autopay is paused",
+        "logTime": "2025-03-27 18:06:55",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip autopay date changed from 2025-03-29 to 2025-03-31",
+        "logTime": "2025-03-29 16:58:05",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is resumed",
+        "logTime": "2025-03-29 16:58:55",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is paused",
+        "logTime": "2025-03-29 16:58:58",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is resumed",
+        "logTime": "2025-03-31 11:39:01",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is paused",
+        "logTime": "2025-03-31 11:39:04",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is resumed",
+        "logTime": "2025-04-19 09:55:57",
+        "logAction": "AU-RE",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is paused",
+        "logTime": "2025-04-19 09:56:00",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      },
+      {
+        "logMsg": "mysip Autopay is canceled",
+        "logTime": "2025-04-23 15:04:06",
+        "logAction": "ACL",
+        "fieldName": "AU-UP"
+      }
+    ],
+    [
+      {
+        "logMsg": "Mandate Created",
+        "logTime": "2025-03-06 10:26:34",
+        "logAction": "MCR",
+        "fieldName": "Mandate created"
+      },
+      {
+        "logMsg": "Autopay Created for DailyMailAlert",
+        "logTime": "2025-04-23 15:05:17",
+        "logAction": "ACR",
+        "fieldName": "DailyMailAlert"
+      },
+      {
+        "logMsg": "DailyMailAlert autopay is scheduled on 2025-04-26",
+        "logTime": "2025-04-23 15:05:17",
+        "logAction": "ACR",
+        "fieldName": "date"
+      },
+      {
+        "logMsg": "DailyMailAlert autopay amount set for ₹100",
+        "logTime": "2025-04-23 15:05:17",
+        "logAction": "ACR",
+        "fieldName": "amount"
+      },
+      {
+        "logMsg": "DailyMailAlert autopay frequency is Daily",
+        "logTime": "2025-04-23 15:05:17",
+        "logAction": "ACR",
+        "fieldName": "frequency"
+      },
+      {
+        "logMsg": "DailyMailAlert autopay date changed from 2025-04-26 to 2025-04-27",
+        "logTime": "2025-04-23 15:06:17",
+        "logAction": "ADC",
+        "fieldName": "AU-DA-UP"
+      },
+      {
+        "logMsg": "DailyMailAlert Autopay is paused",
+        "logTime": "2025-04-23 15:07:30",
+        "logAction": "AUP",
+        "fieldName": "AU-UP"
+      }
+    ]
+  ],
+  "mandateCreationLog": {
+    "logMsg": "Mandate created",
+    "logTime": "2025-03-06 10:26:34",
+    "logAction": "MCR",
+    "fieldName": ""
+  },
+  "status": "S",
+  "errMsg": ""
+}

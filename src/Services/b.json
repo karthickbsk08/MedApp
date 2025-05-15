@@ -1,0 +1,934 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [],
+    "entries": [
+      {
+        "_connectionId": "5529",
+        "_initiator": {
+          "type": "script"
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "29091",
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:29091/webauthn/register-options",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "56"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:29091"
+            },
+            {
+              "name": "Origin",
+              "value": "http://localhost:8080"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:8080/"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-site"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 621,
+          "bodySize": 56,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"userId\":\"Arshad\",\"password\":\"\",\"displayName\":\"Arshad\"}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 14 May 2025 01:10:54 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 614,
+            "mimeType": "application/json",
+            "compression": -13
+          },
+          "redirectURL": "",
+          "headersSize": 452,
+          "bodySize": 627,
+          "_transferSize": 1079,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "[::1]",
+        "startedDateTime": "2025-05-14T01:10:54.229Z",
+        "time": 202.01599999995778,
+        "timings": {
+          "blocked": 78.51699999999033,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.099,
+          "wait": 119.93399999996437,
+          "receive": 3.4660000000030777,
+          "_blocked_queueing": 78.39899999999034,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "5529",
+        "_initiator": {
+          "type": "script"
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "29091",
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:29091/webauthn/register?userId=Arshad",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "656"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:29091"
+            },
+            {
+              "name": "Origin",
+              "value": "http://localhost:8080"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:8080/"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-site"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [
+            {
+              "name": "userId",
+              "value": "Arshad"
+            }
+          ],
+          "cookies": [],
+          "headersSize": 628,
+          "bodySize": 656,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"id\":\"5p1fgN5Z03nyaUQSPR1pNg\",\"rawId\":\"5p1fgN5Z03nyaUQSPR1pNg\",\"type\":\"public-key\",\"response\":{\"clientDataJSON\":\"eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoiNGRsc19QY3hKX2ZxT2pDSW1CcXNvRmJjbUVfTFREbWljdFZ4WVNPQU40cyIsIm9yaWdpbiI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImNyb3NzT3JpZ2luIjpmYWxzZX0\",\"attestationObject\":\"o2NmbXRkbm9uZWdhdHRTdG10oGhhdXRoRGF0YViUSZYN5YgOjGh0NBcPZHZgW4_krrmihjLHmVzzuoMdl2NdAAAAAOqbjWZNAR0hPOS2tIy1ddQAEOadX4DeWdN58mlEEj0daTalAQIDJiABIVggtln3n-nWuCgY0XBsVb5dgEgVij2tkmFfcr18oqjfiXsiWCBP0ITVwZ0XiwvYwJU3R7bPiROpyKuqCyCi8397N-OUuA\"},\"clientExtensionResults\":{\"credProps\":{\"rk\":false}},\"authenticatorAttachment\":\"cross-platform\"}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 14 May 2025 01:11:08 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 66,
+            "mimeType": "application/json",
+            "compression": -12
+          },
+          "redirectURL": "",
+          "headersSize": 452,
+          "bodySize": 78,
+          "_transferSize": 530,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "[::1]",
+        "startedDateTime": "2025-05-14T01:11:08.129Z",
+        "time": 130.46200000007957,
+        "timings": {
+          "blocked": 8.659999999985834,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.19599999999999998,
+          "wait": 120.10500000001804,
+          "receive": 1.5010000000756918,
+          "_blocked_queueing": 8.425999999985834,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "5529",
+        "_initiator": {
+          "type": "script"
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "29091",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:29091/logout",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:29091"
+            },
+            {
+              "name": "Origin",
+              "value": "http://localhost:8080"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:8080/"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-site"
+            },
+            {
+              "name": "USER",
+              "value": "{\"login_history_id\":15,\"user_id\":\"Arshad\"}"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 599,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "131"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json;charset=ISO-8859-1"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 14 May 2025 01:11:13 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 131,
+            "mimeType": "application/json",
+            "compression": -1
+          },
+          "redirectURL": "",
+          "headersSize": 464,
+          "bodySize": 132,
+          "_transferSize": 596,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "[::1]",
+        "startedDateTime": "2025-05-14T01:11:13.831Z",
+        "time": 25.3779999999324,
+        "timings": {
+          "blocked": 12.492999999956526,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.182,
+          "wait": 10.920000000043729,
+          "receive": 1.7829999999321444,
+          "_blocked_queueing": 12.174999999956526,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "5529",
+        "_initiator": {
+          "type": "script"
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "29091",
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:29091/webauthn/authenticate-options",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "21"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:29091"
+            },
+            {
+              "name": "Origin",
+              "value": "http://localhost:8080"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:8080/"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-site"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 625,
+          "bodySize": 21,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"username\":\"Arshad\"}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 14 May 2025 01:11:15 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 141,
+            "mimeType": "application/json",
+            "compression": -12
+          },
+          "redirectURL": "",
+          "headersSize": 452,
+          "bodySize": 153,
+          "_transferSize": 605,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "[::1]",
+        "startedDateTime": "2025-05-14T01:11:15.533Z",
+        "time": 52.95200000000477,
+        "timings": {
+          "blocked": 9.359000000039945,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.2879999999999999,
+          "wait": 41.85499999998775,
+          "receive": 1.4499999999770807,
+          "_blocked_queueing": 9.080000000039945,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "5529",
+        "_initiator": {
+          "type": "script"
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "29091",
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:29091/webauthn/authenticate",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "581"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:29091"
+            },
+            {
+              "name": "Origin",
+              "value": "http://localhost:8080"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:8080/"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-site"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 618,
+          "bodySize": 581,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"id\":\"5p1fgN5Z03nyaUQSPR1pNg\",\"rawId\":\"5p1fgN5Z03nyaUQSPR1pNg\",\"type\":\"public-key\",\"response\":{\"authenticatorData\":\"SZYN5YgOjGh0NBcPZHZgW4_krrmihjLHmVzzuoMdl2MZAAAAAA\",\"clientDataJSON\":\"eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiLTdwV2xlWjFORUJXTWJXUVpvTEIwUUE1TG5RM3Y2cjVfTkhObjd3QXJGSSIsIm9yaWdpbiI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImNyb3NzT3JpZ2luIjpmYWxzZX0\",\"signature\":\"MEUCIEKJ0AO58GoAoECnkTmMvx0UXS5DjmcBNYqBNcD1a9FUAiEAnBIzg2g-lkWEUD4nh26HjjoFDNxziQahy4S2qN1dq7g\",\"userHandle\":\"SzVRcFRJZFFOcmxjalRaZ1hRZkU1elZSUThONkszSjltVG5ycDB0Qkx1QQ\"},\"clientExtensionResults\":{}}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 14 May 2025 01:11:26 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "name": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 58,
+            "mimeType": "application/json",
+            "compression": -12
+          },
+          "redirectURL": "",
+          "headersSize": 452,
+          "bodySize": 70,
+          "_transferSize": 522,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "[::1]",
+        "startedDateTime": "2025-05-14T01:11:26.797Z",
+        "time": 60.62300000007781,
+        "timings": {
+          "blocked": 14.36100000001258,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.20700000000000007,
+          "wait": 42.844999999984246,
+          "receive": 3.2100000000809814,
+          "_blocked_queueing": 12.46800000001258,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      }
+    ]
+  }
+}
