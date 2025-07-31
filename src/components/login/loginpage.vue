@@ -206,13 +206,13 @@ export default {
         });
     },
     GetPasskey() {
-      console.log("Im in passkey method");
+      console.log("Im in passkey INPUT : ", JSON.stringify(this.User_Details));
       if (this.User_Details.userId != "") {
         this.GetDisplayName();
         EventService.ShowPasskeyRegistrationOptions(this.User_Details)
           .then((response) => {
             this.options = response.data;
-            console.log("Response Data : ", response.data);
+            console.log("Response Data : ", JSON.stringify(response.data));
 
             this.publicKeyCredentialCreationOptions = {
               rp: {
@@ -247,48 +247,68 @@ export default {
               },
             };
 
-            console.log(
-              "Options before save ",
-              this.publicKeyCredentialCreationOptions
-            );
+            // console.log(
+            //   "Options before save ",
+            //   this.publicKeyCredentialCreationOptions
+            // );
             // ✅ Call it directly
             if ("credentials" in navigator) {
               console.log("WebAuthn is supported in this browser.");
 
+              console.log(
+                "PublicKeyCredentialCreationOptions : ",
+                JSON.stringify(this.publicKeyCredentialCreationOptions)
+              );
+
+              var dummy = {
+                publicKey: this.publicKeyCredentialCreationOptions,
+              };
+
+              console.log("Navigator create() ==>  : ", JSON.stringify(dummy));
               window.navigator.credentials
-                .create({
-                  publicKey: this.publicKeyCredentialCreationOptions,
-                })
+                .create(dummy)
                 .then((navResponse) => {
-                  console.log("NAV Response : ", navResponse);
+                  console.log(
+                    "NAV Response ==> : ",
+                    JSON.stringify(navResponse)
+                  );
 
                   if (navResponse != null) {
                     const credential = navResponse;
 
-                    const credentialData = {
-                      id: credential.id,
-                      rawId: this.bufferToBase64url(credential.rawId),
-                      type: credential.type,
-                      response: {
-                        clientDataJSON: this.bufferToBase64url(
-                          credential.response.clientDataJSON
-                        ),
-                        attestationObject: this.bufferToBase64url(
-                          credential.response.attestationObject
-                        ),
-                      },
-                      clientExtensionResults:
-                        navResponse.getClientExtensionResults(),
-                      authenticatorAttachment:
-                        credential.authenticatorAttachment || null,
-                    };
+                    // const credentialData = {
+                    //   id: credential.id,
+                    //   rawId: this.bufferToBase64url(credential.rawId),
+                    //   type: credential.type,
+                    //   response: {
+                    //     clientDataJSON: this.bufferToBase64url(
+                    //       credential.response.clientDataJSON
+                    //     ),
+                    //     attestationObject: this.bufferToBase64url(
+                    //       credential.response.attestationObject
+                    //     ),
+                    //   },
+                    //   clientExtensionResults:
+                    //     navResponse.getClientExtensionResults(),
+                    //   authenticatorAttachment:
+                    //     credential.authenticatorAttachment || null,
+                    // };
+                    console.log(
+                      "Register Passkey input body: ",
+                      JSON.stringify(credential)
+                    );
 
                     EventService.RegisterPasskey(
                       this.User_Details.userId,
-                      credentialData
+                      credential
                     )
                       .then((response) => {
                         console.log("Response Data : ", response.data);
+                        console.log(
+                          "Register Passkey input body: ",
+                          JSON.stringify(response.data)
+                        );
+
                         if (response.data.status == "S") {
                           this.obj = {
                             snackbar: true,
@@ -445,6 +465,52 @@ export default {
       var User = {
         username: this.User_Details.userId,
       };
+
+      {
+        /*    "challenge": {
+        "0": 210,
+        "1": 100,
+        "2": 108,
+        "3": 159,
+        "4": 8,
+        "5": 110,
+        "6": 117,
+        "7": 10,
+        "8": 93,
+        "9": 16,
+        "10": 107,
+        "11": 5,
+        "12": 28,
+        "13": 201,
+        "14": 247,
+        "15": 14,
+        "16": 97,
+        "17": 139,
+        "18": 215,
+        "19": 146,
+        "20": 231,
+        "21": 104,
+        "22": 93,
+        "23": 164,
+        "24": 198,
+        "25": 231,
+        "26": 65,
+        "27": 54,
+        "28": 159,
+        "29": 10,
+        "30": 163,
+        "31": 71
+    },
+    "timeout": null,
+    "rpId": "localhost",
+    "allowCredentials": [],
+    "userVerification": "preferred",
+    "extensions": {
+        "appid": null,
+        "largeBlob": null,
+        "uvm": null
+    } */
+      }
       // Step 1: Get authentication options
       EventService.startAuthentication(JSON.stringify(User))
         .then((response) => {
@@ -452,15 +518,174 @@ export default {
           this.AuthenticationChallenge = response.data;
           console.log("Response Data : ", response.data);
 
+          console.log("Authentication Challenge : ", {
+            ...this.AuthenticationChallenge,
+          });
+          /*{
+    "challenge": "szd0bOkOTFcQXdTTHTgsuPWTUBh2l-Luv2mr6rvpuIE",
+    "timeout": null,
+    "rpId": "localhost",
+    "allowCredentials": [
+        {
+            "type": "public-key",
+            "id": "Eti28oNsm68oNJQxIR_wYg",
+            "transports": null
+        }
+    ],
+    "userVerification": "preferred",
+    "extensions": {
+        "appid": null,
+        "largeBlob": null,
+        "uvm": null
+    }
+}*/
+          console.log(
+            "AuthenticationChallenge Challenge : ",
+            Object.values(
+              this.AuthenticationChallenge.publicKeyCredentialRequestOptions
+                .challenge
+            )
+          );
+
+          console.log(
+            "AuthenticationChallenge bytearray : ",
+            new Uint8Array(
+              Object.values(
+                this.AuthenticationChallenge.publicKeyCredentialRequestOptions
+                  .challenge
+              )
+            )
+          );
+
+          console.log(
+            "AuthenticationChallenge bytearray : ",
+            new Uint8Array(
+              Object.values(
+                this.AuthenticationChallenge.publicKeyCredentialRequestOptions
+                  .challenge
+              )
+            ).buffer
+          );
+
+          console.log(
+            "this.AuthenticationChallenge.allowCredentials : ",
+            this.AuthenticationChallenge.publicKeyCredentialRequestOptions
+              .allowCredentials
+          );
+
+          /*       {
+    "challenge": {},
+    "timeout": null,
+    "rpId": "localhost",
+    "allowCredentials": [
+        {
+            "type": "public-key",
+            "id": {}
+        }
+    ],
+    "userVerification": "preferred",
+    "extensions": {
+        "appid": null,
+        "largeBlob": null,
+        "uvm": null
+    }
+} */
+
+          /*   const publicKey = {
+            ...this.AuthenticationChallenge,
+            challenge: this.base64urlToUint8Array(
+              this.AuthenticationChallenge.challenge
+            ).buffer,
+            allowCredentials: this.AuthenticationChallenge.allowCredentials.map(
+              (cred) => {
+                console.log("Credential : ", { ...cred });
+                const cleaned = {
+                  ...cred,
+                  id: this.base64urlToUint8Array(cred.id).buffer,
+                };
+                // Remove 'transports' if null or undefined
+                if (!Array.isArray(cred.transports)) {
+                  delete cleaned.transports;
+                }
+                return cleaned;
+              }
+            ),
+          };
+
+          console.log("Public Key : ", publicKey);
+ */
+
+          console.log(" ...this.AuthenticationChallenge : ", {
+            ...this.AuthenticationChallenge,
+          });
+
+          /*       
+           {
+    "publicKeyCredentialRequestOptions": {
+        "challenge": "BK5ZfwbajEplu6LfOSt4WbTlPuT7G38UQ-zTwr1gMeY",
+        "timeout": null,
+        "rpId": "localhost",
+        "allowCredentials": [
+            {
+                "type": "public-key",
+                "id": "G5Vspl6izBEk66d6QRCEcg",
+                "transports": null
+            }
+        ],
+        "userVerification": "preferred",
+        "extensions": {
+            "appid": null,
+            "largeBlob": null,
+            "uvm": null
+        }
+    },
+    "username": null,
+    "userHandle": "td86BIAlw7-INzPeJWBItMWgawRHSnWrnD6ITN18ZPA"
+}
+} */
+          // const { extensions: _, ...cleanedChallenge } =
+          //   this.AuthenticationChallenge;
+
+          const publicKey = {
+            ...this.AuthenticationChallenge.publicKeyCredentialRequestOptions,
+            extensions: {},
+            challenge: this.base64urlToUint8Array(
+              this.AuthenticationChallenge.publicKeyCredentialRequestOptions
+                .challenge
+            ).buffer,
+            allowCredentials:
+              this.AuthenticationChallenge.publicKeyCredentialRequestOptions.allowCredentials.map(
+                (cred) => {
+                  const formatted = {
+                    ...cred,
+                    id: this.base64urlToUint8Array(cred.id).buffer,
+                  };
+                  if (!Array.isArray(cred.transports)) {
+                    delete formatted.transports;
+                  }
+                  return formatted;
+                }
+              ),
+            username: "",
+            timeout: "",
+            userHandle: this.AuthenticationChallenge.userHandle
+              ? this.base64urlToUint8Array(
+                  this.AuthenticationChallenge.userHandle
+                ).buffer
+              : null,
+          };
+
+          console.log("publicKey : ", publicKey);
+
           // Step 2: Decode challenge and allowCredentials
           // this.AuthenticationChallenge.challenge = Uint8Array.from(
           //   atob(this.AuthenticationChallenge.challenge),
           //   (c) => c.charCodeAt(0)
           // );
 
-          this.AuthenticationChallenge.challenge = this.base64urlToUint8Array(
-            this.AuthenticationChallenge.challenge
-          );
+          // this.AuthenticationChallenge.challenge = this.base64urlToUint8Array(
+          //   this.AuthenticationChallenge.challenge
+          // );
           /* if (this.AuthenticationChallenge.allowCredentials != null) {
             this.AuthenticationChallenge.allowCredentials.forEach(
               (credential) => {
@@ -469,7 +694,40 @@ export default {
             );
           } */
 
-          if (
+          /*          {
+    "challenge": "6KZF2wfd5pjeqS64UjdEmDNxvMWTykS4P3Wj3aVjuLY",
+    "timeout": null,
+    "rpId": "localhost",
+    "allowCredentials": [
+        {
+            "type": "public-key",
+            "id": "4cVenuCyO3U481dOecvHtA",
+            "transports": null
+        }
+    ],
+    "userVerification": "preferred",
+    "extensions": {
+        "appid": null,
+        "largeBlob": null,
+        "uvm": null
+    }
+        // Step 2: Decode base64url fields
+      const publicKey = {
+        ...options,
+        challenge: this.base64urlToBuffer(options.challenge),
+        allowCredentials: options.allowCredentials.map(cred => ({
+          ...cred,
+          id: this.base64urlToBuffer(cred.id)
+        }))
+      };
+
+      // Step 3: Call WebAuthn API
+      const assertion = await navigator.credentials.get({ publicKey });
+
+      console.log("Assertion result:", assertion);
+} */
+
+          /*    if (
             this.AuthenticationChallenge.allowCredentials &&
             Array.isArray(this.AuthenticationChallenge.allowCredentials)
           ) {
@@ -486,11 +744,86 @@ export default {
             "Authentication Challenge : ",
             this.AuthenticationChallenge
           );
+ */
+
+          // console.log(
+          //   "challenge:",
+          //   this.bufferToBase64url(publicKey.challenge)
+          // );
+          // console.log(
+          //   "credential ID:",
+          //   this.bufferToBase64url(publicKey.allowCredentials[0].id)
+          // );
+
+          // console.log("{ ...publicKey } : ", { ...publicKey });
 
           // Step 3: Request credentials
-          window.navigator.credentials
+          navigator.credentials
+            .get({ publicKey })
+            .then((credential) => {
+              console.log("GET CREDENTIAL : ", credential);
+              console.log(
+                "GET CREDENTIAL stringify : ",
+                JSON.stringify(credential)
+              );
+
+              /*          {
+    "authenticatorAttachment": "platform",
+    "clientExtensionResults": {},
+    "id": "0GiwWfVX1RVa6khv-zDsOg",
+    "rawId": "0GiwWfVX1RVa6khv-zDsOg",
+    "response": {
+        "authenticatorData": "SZYN5YgOjGh0NBcPZHZgW4_krrmihjLHmVzzuoMdl2MZAAAAAA",
+        "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiRzV3aVhnSjVqQ09mUXhxX1ZKRzN5ODBfWTNCcVZsWHYxc1NrN09VR3FERSIsIm9yaWdpbiI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImNyb3NzT3JpZ2luIjpmYWxzZX0",
+        "signature": "MEUCIQDBnB7GalY_Z2TAXBM5AHqa8hzrPoxJMVi8GKyTe7YmvQIgHD1IM3UVBH0QDk1O6EHs6GM0CuTPgclprPXK5lWI814",
+        "userHandle": "eTJuRlpxeFdlbzV1MmdCa3dRdVFSUTlzYmZDSG9Fd2FQNGxka252X29OTQ"
+    },
+    "type": "public-key"
+}
+   */
+              const authData = {
+                id: credential.id,
+                rawId: this.bufferToBase64url(credential.rawId),
+                type: credential.type,
+                authenticatorAttachment: credential.authenticatorAttachment,
+                response: {
+                  authenticatorData: this.bufferToBase64url(
+                    credential.response.authenticatorData
+                  ),
+                  clientDataJSON: this.bufferToBase64url(
+                    credential.response.clientDataJSON
+                  ),
+                  signature: this.bufferToBase64url(
+                    credential.response.signature
+                  ),
+                  userHandle: credential.response.userHandle
+                    ? this.bufferToBase64url(credential.response.userHandle)
+                    : null,
+                },
+                clientExtensionResults:
+                  credential.getClientExtensionResults?.() || {},
+              };
+
+              return EventService.finishAuthentication(authData)
+                .then((res) => {
+                  console.log("finishAuthentication : " + res);
+                })
+                .catch((err) => {
+                  console.log("finishAuthentication : " + err);
+                });
+            })
+            // .then((response) => {
+            //   console.log("Authentication success:", response.data);
+            //   // Redirect or show success message
+            // })
+            .catch((error) => {
+              console.log("WebAuthn error stringify : ", JSON.stringify(error));
+              console.log("WebAuthn error:", error);
+              // Show error message
+            });
+          /*  window.navigator.credentials
             .get({
-              publicKey: this.AuthenticationChallenge,
+              publicKey: publicKey,
             })
             .then((credential) => {
               console.log("Response Data : ", credential);
@@ -562,7 +895,7 @@ export default {
               //     "Error in Navigator while fetching credentials from device" +
               //     error.response,
               // };
-            });
+            }); */
         })
         .catch((error) => {
           console.log(error);
